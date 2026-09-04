@@ -99,8 +99,11 @@
                         <span class="d-none d-md-inline ml-1">{{ auth()->user()->name }}</span>
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">
-                        <a href="{{ route('admin.users.show', auth()->user()) }}" class="dropdown-item">
-                            <i class="fas fa-user mr-2"></i> Profile
+                        <a href="{{ route('admin.profile.edit') }}" class="dropdown-item">
+                            <i class="fas fa-user mr-2"></i> Edit Profile
+                        </a>
+                        <a href="{{ route('admin.profile.edit') }}#password" class="dropdown-item">
+                            <i class="fas fa-key mr-2"></i> Change Password
                         </a>
                         <div class="dropdown-divider"></div>
                         <a href="{{ route('logout') }}" class="dropdown-item" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
@@ -186,6 +189,25 @@
                                 <p>Activity Logs</p>
                             </a>
                         </li>
+                        
+                        <li class="nav-header">ACCOUNT</li>
+                        
+                        <li class="nav-item">
+                            <a href="{{ route('admin.profile.edit') }}" class="nav-link {{ request()->routeIs('admin.profile.*') ? 'active' : '' }}">
+                                <i class="nav-icon fas fa-user-cog"></i>
+                                <p>My Profile</p>
+                            </a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a href="{{ route('logout') }}" class="nav-link" onclick="event.preventDefault(); document.getElementById('sidebar-logout-form').submit();">
+                                <i class="nav-icon fas fa-sign-out-alt"></i>
+                                <p>Logout</p>
+                            </a>
+                        </li>
+                        <form id="sidebar-logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                            @csrf
+                        </form>
                         
                         <li class="nav-header">SETTINGS</li>
                         
