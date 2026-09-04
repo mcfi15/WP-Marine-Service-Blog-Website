@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'Admin Dashboard') - WP Marine Limited</title>
+    <title>@yield('title', 'Admin Dashboard') - {{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}</title>
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -347,9 +347,9 @@
         <aside class="sidebar" id="sidebar">
             <div class="sidebar-brand">
                 {{-- @if($settings['general']['site_logo'] ?? false)
-                <img src="{{ asset('storage/' . $settings['general']['site_logo']) }}" alt="{{ $settings['general']['site_name'] ?? 'WP Marine' }}" style="max-height: 45px; max-width: 180px;">
+                <img src="{{ asset('storage/' . $settings['general']['site_logo']) }}" alt="{{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}" style="max-height: 45px; max-width: 180px;">
                 @else
-                <h4><i class="fas fa-ship mr-2"></i>{{ $settings['general']['site_name'] ?? 'WP Marine' }}</h4>
+                <h4><i class="fas fa-ship mr-2"></i>{{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}</h4>
                 @endif --}}
                 <p>Admin Panel</p>
             </div>

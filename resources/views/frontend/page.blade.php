@@ -1,6 +1,6 @@
 @extends('frontend.layouts.main')
 
-@section('meta_title', $page->meta_title ?? $page->title . ' - ' . ($settings['general']['site_name'] ?? 'WP Marine Limited'))
+@section('meta_title', $page->meta_title ?? $page->title . ' - ' . ($settings['general']['site_name'] ?? 'Western Partners Marine Services'))
 @section('meta_description', $page->meta_description ?? str(strip_tags($page->content))->limit(160))
 @section('meta_keywords', $page->meta_keywords ?? '')
 

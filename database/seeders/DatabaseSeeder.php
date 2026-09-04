@@ -41,9 +41,9 @@ class DatabaseSeeder extends Seeder
             [
                 'title' => 'Home',
                 'slug' => 'home',
-                'hero_heading' => 'WP Marine Services',
+                'hero_heading' => 'Western Partners Marine Services',
                 'hero_subheading' => 'We are ship chandlery and marine servicing company, operating through a large range of network, with reliable partners across multiple continents.',
-                'content' => '<p>WP Marine Limited has established itself as a leading provider of comprehensive marine services. With years of experience and a vast network of trusted partners, we deliver exceptional quality and reliability to every client we serve.</p>',
+                'content' => '<p>Western Partners Marine Services has established itself as a leading provider of comprehensive marine services. With years of experience and a vast network of trusted partners, we deliver exceptional quality and reliability to every client we serve.</p>',
                 'excerpt' => 'Your trusted partner in ship chandlery and marine services since 2015.',
                 'featured_image' => null,
                 'hero_image' => null,
@@ -56,9 +56,9 @@ class DatabaseSeeder extends Seeder
             [
                 'title' => 'About Us',
                 'slug' => 'about-us',
-                'hero_heading' => 'About WP Marine Limited',
+                'hero_heading' => 'About Western Partners Marine Services',
                 'hero_subheading' => 'Your trusted partner in ship chandlery and marine servicing',
-                'content' => '<p>WP Marine Limited was established in 2015 with a vision to become the leading ship chandlery and marine servicing company across Africa, the Middle East, and Asia. What started as a small operation has grown into a comprehensive network of reliable partners serving vessels at ports and anchorages throughout these regions.</p><p>Our commitment to quality, reliability, and customer satisfaction has earned us the trust of ship owners, operators, and charterers worldwide. We understand the unique challenges of maritime operations and have built our services around meeting those needs efficiently and professionally.</p>',
+                'content' => '<p>Western Partners Marine Services was established in 2015 with a vision to become the leading ship chandlery and marine servicing company across Africa, the Middle East, and Asia. What started as a small operation has grown into a comprehensive network of reliable partners serving vessels at ports and anchorages throughout these regions.</p><p>Our commitment to quality, reliability, and customer satisfaction has earned us the trust of ship owners, operators, and charterers worldwide. We understand the unique challenges of maritime operations and have built our services around meeting those needs efficiently and professionally.</p>',
                 'excerpt' => 'Learn about our history, mission, and commitment to marine services.',
                 'featured_image' => null,
                 'hero_image' => null,
@@ -114,7 +114,7 @@ class DatabaseSeeder extends Seeder
                 'hero_heading' => 'Our Customers',
                 'hero_subheading' => 'Trusted by ship owners, operators, and charterers worldwide',
                 'content' => '',
-                'excerpt' => 'See what our clients say about WP Marine Limited.',
+                'excerpt' => 'See what our clients say about Western Partners Marine Services.',
                 'featured_image' => null,
                 'hero_image' => null,
                 'sections' => [
@@ -129,12 +129,12 @@ class DatabaseSeeder extends Seeder
                     'testimonials_title' => 'What Our Clients Say',
                     'testimonials_subtitle' => 'Don\'t just take our word for it - hear from our satisfied clients',
                     'testimonials' => [
-                        ['rating' => 5, 'quote' => 'WP Marine has been our trusted partner for supplies across West Africa. Their reliability and competitive pricing make them our first choice for all chandlery needs.', 'name' => 'Captain M. Okonkwo', 'position' => 'MV Atlantic Pride'],
+                        ['rating' => 5, 'quote' => 'Western Partners Marine Services has been our trusted partner for supplies across West Africa. Their reliability and competitive pricing make them our first choice for all chandlery needs.', 'name' => 'Captain M. Okonkwo', 'position' => 'MV Atlantic Pride'],
                         ['rating' => 5, 'quote' => 'Exceptional service and always available when we need them. Their network coverage in the Middle East has been invaluable for our operations.', 'name' => 'Ahmed Hassan', 'position' => 'Operations Manager, Sea Logistics'],
-                        ['rating' => 5, 'quote' => 'Professional, responsive, and always deliver on time. WP Marine understands the unique demands of maritime operations and exceeds expectations.', 'name' => 'John Smith', 'position' => 'Fleet Manager, Global Shipping'],
+                        ['rating' => 5, 'quote' => 'Professional, responsive, and always deliver on time. Western Partners Marine Services understands the unique demands of maritime operations and exceeds expectations.', 'name' => 'John Smith', 'position' => 'Fleet Manager, Global Shipping'],
                     ],
                     'why_title' => 'Why Choose Us',
-                    'why_subtitle' => 'Reasons to partner with WP Marine Limited',
+                    'why_subtitle' => 'Reasons to partner with Western Partners Marine Services',
                     'reasons' => [
                         ['icon' => 'fa-globe-africa', 'title' => 'Global Coverage', 'description' => '20+ countries across Africa, Middle East, and Asia'],
                         ['icon' => 'fa-clock', 'title' => '24/7 Support', 'description' => 'Round-the-clock assistance for urgent needs'],
@@ -176,7 +176,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Fresh Water Supply',
                 'slug' => 'fresh-water-supply',
                 'short_description' => 'Reliable fresh water delivery to vessels at all ports and anchorage locations across Africa, Middle East, and Asia.',
-                'description' => '<p>WP Marine Limited provides reliable fresh water supply services to vessels at all ports and anchorage locations across our network. We understand the critical importance of clean, fresh water for crew welfare and vessel operations.</p><p>Our water supply meets international quality standards and is delivered promptly to your schedule. Whether you need large quantities for extended voyages or smaller top-ups between ports, we have you covered.</p><h5>Key Features:</h5><ul><li>Certified clean water meeting WHO standards</li><li>Flexible delivery schedules (24/7)</li><li>Competitive bulk pricing</li><li>Coverage across 20+ countries</li><li>Emergency supply available</li></ul>',
+                'description' => '<p>Western Partners Marine Services provides reliable fresh water supply services to vessels at all ports and anchorage locations across our network. We understand the critical importance of clean, fresh water for crew welfare and vessel operations.</p><p>Our water supply meets international quality standards and is delivered promptly to your schedule. Whether you need large quantities for extended voyages or smaller top-ups between ports, we have you covered.</p><h5>Key Features:</h5><ul><li>Certified clean water meeting WHO standards</li><li>Flexible delivery schedules (24/7)</li><li>Competitive bulk pricing</li><li>Coverage across 20+ countries</li><li>Emergency supply available</li></ul>',
                 'icon' => 'fa-ship',
                 'sort_order' => 1,
                 'status' => 'published',
@@ -212,7 +212,7 @@ class DatabaseSeeder extends Seeder
                 'title' => 'Waste Management',
                 'slug' => 'waste-management',
                 'short_description' => 'Professional garbage disposal, oily waste management, and environmental compliance services.',
-                'description' => '<p>WP Marine Limited offers comprehensive waste management services for vessels, helping you maintain environmental compliance while ensuring proper disposal of all waste types. We follow MARPOL regulations and local port requirements.</p><p>Our waste management services cover all categories of ship-generated waste, from garbage to oily residues, ensuring environmentally responsible disposal.</p><h5>Services:</h5><ul><li>Garbage collection &amp; disposal</li><li>Oily waste management</li><li>Sewage disposal</li><li>Recycling services</li><li>Environmental compliance documentation</li></ul>',
+                'description' => '<p>Western Partners Marine Services offers comprehensive waste management services for vessels, helping you maintain environmental compliance while ensuring proper disposal of all waste types. We follow MARPOL regulations and local port requirements.</p><p>Our waste management services cover all categories of ship-generated waste, from garbage to oily residues, ensuring environmentally responsible disposal.</p><h5>Services:</h5><ul><li>Garbage collection &amp; disposal</li><li>Oily waste management</li><li>Sewage disposal</li><li>Recycling services</li><li>Environmental compliance documentation</li></ul>',
                 'icon' => 'fa-trash-alt',
                 'sort_order' => 5,
                 'status' => 'published',
@@ -238,10 +238,11 @@ class DatabaseSeeder extends Seeder
         // Create settings
         $settings = [
             // General
-            ['key' => 'site_name', 'value' => 'WP Marine Limited', 'type' => 'text', 'group' => 'general'],
+            ['key' => 'site_name', 'value' => 'Western Partners Marine Services', 'type' => 'text', 'group' => 'general'],
             ['key' => 'site_tagline', 'value' => 'Ship Chandlery & Marine Services', 'type' => 'text', 'group' => 'general'],
             ['key' => 'site_description', 'value' => 'Professional ship chandlery and marine servicing company', 'type' => 'textarea', 'group' => 'general'],
-            ['key' => 'site_logo', 'value' => null, 'type' => 'image', 'group' => 'general'],
+            ['key' => 'site_dark_logo', 'value' => null, 'type' => 'image', 'group' => 'general'],
+            ['key' => 'site_light_logo', 'value' => null, 'type' => 'image', 'group' => 'general'],
             ['key' => 'site_favicon', 'value' => null, 'type' => 'image', 'group' => 'general'],
             
             // Contact
@@ -257,7 +258,7 @@ class DatabaseSeeder extends Seeder
             ['key' => 'mail_password', 'value' => null, 'type' => 'text', 'group' => 'email'],
             ['key' => 'mail_encryption', 'value' => null, 'type' => 'text', 'group' => 'email'],
             ['key' => 'mail_from_address', 'value' => 'noreply@wpmarinelimited.com', 'type' => 'text', 'group' => 'email'],
-            ['key' => 'mail_from_name', 'value' => 'WP Marine Limited', 'type' => 'text', 'group' => 'email'],
+            ['key' => 'mail_from_name', 'value' => 'Western Partners Marine Services', 'type' => 'text', 'group' => 'email'],
             
             // Integrations
             ['key' => 'google_analytics_id', 'value' => null, 'type' => 'text', 'group' => 'integrations'],
@@ -270,7 +271,7 @@ class DatabaseSeeder extends Seeder
             ['key' => 'live_chat_script', 'value' => null, 'type' => 'textarea', 'group' => 'integrations'],
             
             // SEO
-            ['key' => 'seo_home_title', 'value' => 'WP Marine Limited - Ship Chandlery & Marine Services', 'type' => 'text', 'group' => 'seo'],
+            ['key' => 'seo_home_title', 'value' => 'Western Partners Marine Services - Ship Chandlery & Marine Services', 'type' => 'text', 'group' => 'seo'],
             ['key' => 'seo_home_description', 'value' => 'Professional ship chandlery and marine servicing company', 'type' => 'textarea', 'group' => 'seo'],
             
             // Social
@@ -280,14 +281,14 @@ class DatabaseSeeder extends Seeder
             ['key' => 'social_instagram', 'value' => '#', 'type' => 'text', 'group' => 'social'],
             
             // Additional SEO
-            ['key' => 'seo_about_title', 'value' => 'About Us - WP Marine Limited', 'type' => 'text', 'group' => 'seo'],
-            ['key' => 'seo_about_description', 'value' => 'Learn about WP Marine Limited, our history, mission, and commitment to marine services.', 'type' => 'textarea', 'group' => 'seo'],
-            ['key' => 'seo_offer_title', 'value' => 'Our Services - WP Marine Limited', 'type' => 'text', 'group' => 'seo'],
+            ['key' => 'seo_about_title', 'value' => 'About Us - Western Partners Marine Services', 'type' => 'text', 'group' => 'seo'],
+            ['key' => 'seo_about_description', 'value' => 'Learn about Western Partners Marine Services, our history, mission, and commitment to marine services.', 'type' => 'textarea', 'group' => 'seo'],
+            ['key' => 'seo_offer_title', 'value' => 'Our Services - Western Partners Marine Services', 'type' => 'text', 'group' => 'seo'],
             ['key' => 'seo_offer_description', 'value' => 'Discover our comprehensive range of marine services including fresh water supply, bunker delivery, provisions, lubricants, and waste management.', 'type' => 'textarea', 'group' => 'seo'],
-            ['key' => 'seo_clients_title', 'value' => 'Our Customers - WP Marine Limited', 'type' => 'text', 'group' => 'seo'],
-            ['key' => 'seo_clients_description', 'value' => 'See what our clients say about WP Marine Limited. Trusted by ship owners, operators, and charterers worldwide.', 'type' => 'textarea', 'group' => 'seo'],
-            ['key' => 'seo_contact_title', 'value' => 'Contact Us - WP Marine Limited', 'type' => 'text', 'group' => 'seo'],
-            ['key' => 'seo_contact_description', 'value' => 'Get in touch with WP Marine Limited for inquiries about our marine services, quotes, or partnership opportunities.', 'type' => 'textarea', 'group' => 'seo'],
+            ['key' => 'seo_clients_title', 'value' => 'Our Customers - Western Partners Marine Services', 'type' => 'text', 'group' => 'seo'],
+            ['key' => 'seo_clients_description', 'value' => 'See what our clients say about Western Partners Marine Services. Trusted by ship owners, operators, and charterers worldwide.', 'type' => 'textarea', 'group' => 'seo'],
+            ['key' => 'seo_contact_title', 'value' => 'Contact Us - Western Partners Marine Services', 'type' => 'text', 'group' => 'seo'],
+            ['key' => 'seo_contact_description', 'value' => 'Get in touch with Western Partners Marine Services for inquiries about our marine services, quotes, or partnership opportunities.', 'type' => 'textarea', 'group' => 'seo'],
             
             // GDPR
             ['key' => 'gdpr_enabled', 'value' => true, 'type' => 'boolean', 'group' => 'gdpr'],
@@ -296,7 +297,7 @@ class DatabaseSeeder extends Seeder
 
         foreach ($settings as $setting) {
             // Preserve existing image settings (logo, favicon) so uploaded files aren't lost on re-seed
-            if (in_array($setting['key'], ['site_logo', 'site_favicon']) && Setting::where('key', $setting['key'])->whereNotNull('value')->exists()) {
+            if (in_array($setting['key'], ['site_dark_logo', 'site_light_logo', 'site_favicon']) && Setting::where('key', $setting['key'])->whereNotNull('value')->exists()) {
                 continue;
             }
             Setting::updateOrCreate(

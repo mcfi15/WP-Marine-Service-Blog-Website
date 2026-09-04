@@ -1,6 +1,6 @@
 @extends('frontend.layouts.main')
 
-@section('meta_title', $page->meta_title ?? 'Contact Us - WP Marine Limited')
+@section('meta_title', $page->meta_title ?? 'Contact Us - ' . ($settings['general']['site_name'] ?? 'Western Partners Marine Services'))
 @section('meta_description', $page->meta_description ?? 'Get in touch for inquiries about our marine services, quotes, or partnership opportunities.')
 
 @section('content')

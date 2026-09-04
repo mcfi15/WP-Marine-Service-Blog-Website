@@ -1,6 +1,6 @@
 @extends('frontend.layouts.main')
 
-@section('meta_title', $service->title . ' - WP Marine Limited')
+@section('meta_title', $service->title . ' - ' . ($settings['general']['site_name'] ?? 'Western Partners Marine Services'))
 @section('meta_description', $service->short_description ?? 'Learn more about our ' . $service->title . ' service.')
 
 @section('content')

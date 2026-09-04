@@ -1,6 +1,6 @@
 @extends('frontend.layouts.main')
 
-@section('meta_title', $page->meta_title ?? 'Our Customers - WP Marine Limited')
+@section('meta_title', $page->meta_title ?? 'Our Customers - ' . ($settings['general']['site_name'] ?? 'Western Partners Marine Services'))
 @section('meta_description', $page->meta_description ?? 'Trusted by ship owners, operators, and charterers worldwide.')
 
 @section('content')
@@ -71,7 +71,7 @@
     <div class="container">
         <div class="text-center" data-aos="fade-up">
             <h2 class="section-title">{{ $page->sections['why_title'] ?? 'Why Choose Us' }}</h2>
-            <p class="section-subtitle">{{ $page->sections['why_subtitle'] ?? 'Reasons to partner with WP Marine Limited' }}</p>
+            <p class="section-subtitle">{{ $page->sections['why_subtitle'] ?? 'Reasons to partner with ' . ($settings['general']['site_name'] ?? 'Western Partners Marine Services') }}</p>
         </div>
         <div class="row g-4">
             @foreach(($page->sections['reasons'] ?? []) as $reason)

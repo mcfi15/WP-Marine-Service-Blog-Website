@@ -1,6 +1,6 @@
 @extends('frontend.layouts.main')
 
-@section('meta_title', $page->meta_title ?? ($settings['seo']['seo_home_title'] ?? 'WP Marine Limited - Ship Chandlery & Marine Services Since 2015'))
+@section('meta_title', $page->meta_title ?? ($settings['seo']['seo_home_title'] ?? ($settings['general']['site_name'] ?? 'Western Partners Marine Services') . ' - Ship Chandlery & Marine Services Since 2015'))
 @section('meta_description', $page->meta_description ?? ($settings['seo']['seo_home_description'] ?? 'Professional ship chandlery and marine servicing company'))
 
 @section('content')
@@ -11,7 +11,7 @@
             <div class="col-lg-6" data-aos="fade-right">
                 <div class="hero-content">
                     <span class="badge bg-light text-primary mb-3 px-3 py-2">Since 2015</span>
-                    <h1>{{ $page->hero_heading ?? 'WP Marine Services' }}</h1>
+                    <h1>{{ $page->hero_heading ?? ($settings['general']['site_name'] ?? 'Western Partners Marine Services') }}</h1>
                     <p class="mb-4">
                         {{ $page->hero_subheading ?? ($settings['general']['site_tagline'] ?? 'We are ship chandlery and marine servicing company, operating through a large range of network, with reliable partners across multiple continents.') }}
                     </p>

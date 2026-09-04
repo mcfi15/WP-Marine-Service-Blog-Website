@@ -1,7 +1,7 @@
 {
     "name": "wpmarine/laravel",
     "type": "project",
-    "description": "WP Marine Limited - Ship Chandlery and Marine Servicing Company",
+    "description": "Western Partners Marine Services - Ship Chandlery and Marine Servicing Company",
     "keywords": ["laravel", "marine", "shipping", "chandlery"],
     "license": "MIT",
     "require": {

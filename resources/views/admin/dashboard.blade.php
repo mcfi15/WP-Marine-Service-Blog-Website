@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', 'Admin Dashboard') - {{ $settings['general']['site_name'] ?? 'WP Marine Limited' }}</title>
+    <title>@yield('title', 'Admin Dashboard') - {{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{ $settings['general']['site_favicon'] ? asset('storage/' . $settings['general']['site_favicon']) : asset('images/favicon.png') }}">
@@ -119,10 +119,10 @@
             <a href="{{ route('admin.dashboard') }}" class="brand-link">
                 <img src="{{ $settings['general']['site_favicon'] ? asset('storage/' . $settings['general']['site_favicon']) : asset('images/favicon.png') }}" alt="Icon" class="brand-image img-circle elevation-3" style="opacity: .8">
                 <span class="brand-text font-weight-light">
-                    @if($settings['general']['site_logo'] ?? false)
-                    <img src="{{ asset('storage/' . $settings['general']['site_logo']) }}" alt="{{ $settings['general']['site_name'] ?? 'Logo' }}" style="max-height: 24px; margin-right: 6px;">
+                    @if($settings['general']['site_dark_logo'] ?? false)
+                    <img src="{{ asset('storage/' . $settings['general']['site_dark_logo']) }}" alt="{{ $settings['general']['site_name'] ?? 'Logo' }}" style="max-height: 24px; margin-right: 6px;">
                     @else
-                    {{ $settings['general']['site_name'] ?? 'WP Marine' }}
+                    {{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}
                     @endif
                 </span>
             </a>
@@ -226,7 +226,7 @@
             <div class="float-right d-none d-sm-inline">
                 <strong>Version</strong> 1.0.0
             </div>
-            <strong>Copyright &copy; {{ date('Y') }} <a href="{{ route('frontend.home') }}">WP Marine Limited</a>.</strong> All rights reserved.
+            <strong>Copyright &copy; {{ date('Y') }} <a href="{{ route('frontend.home') }}">{{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}</a>.</strong> All rights reserved.
         </footer>
     </div>
     

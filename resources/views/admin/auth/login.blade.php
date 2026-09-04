@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Login - {{ $settings['general']['site_name'] ?? 'WP Marine Limited' }}</title>
+    <title>Admin Login - {{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}</title>
     
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{ $settings['general']['site_favicon'] ? asset('storage/' . $settings['general']['site_favicon']) : asset('images/favicon.png') }}">
@@ -159,13 +159,13 @@
     <div class="login-card">
             <div class="login-header">
                     <div class="logo-icon">
-                        @if($settings['general']['site_logo'] ?? false)
-                        <img src="{{ asset('storage/' . $settings['general']['site_logo']) }}" alt="{{ $settings['general']['site_name'] ?? 'WP Marine' }}" height="60">
+                        @if($settings['general']['site_dark_logo'] ?? false)
+                        <img src="{{ asset('storage/' . $settings['general']['site_dark_logo']) }}" alt="{{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}" height="60">
                         @else
                         <i class="fas fa-ship"></i>
                         @endif
                     </div>
-                    <h2>{{ $settings['general']['site_name'] ?? 'WP Marine' }}</h2>
+                    <h2>{{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}</h2>
                     <p>Admin Panel Login</p>
                 </div>
         

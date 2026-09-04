@@ -1,4 +1,4 @@
-# WP Marine Limited - Full Stack Web Application
+# Western Partners Marine Services - Full Stack Web Application
 
 A professional marine services company website built with Laravel 12, featuring a responsive Bootstrap frontend and comprehensive admin dashboard for content management.
 
@@ -59,7 +59,7 @@ Default admin credentials after seeding:
 Configure the following in your `.env` file:
 
 ```
-APP_NAME="WP Marine Limited"
+APP_NAME="Western Partners Marine Services"
 APP_URL=http://localhost
 APP_KEY=
 
@@ -76,7 +76,7 @@ MAIL_PORT=587
 MAIL_USERNAME=
 MAIL_PASSWORD=
 MAIL_FROM_ADDRESS=hello@wpmarine.com
-MAIL_FROM_NAME="WP Marine Limited"
+MAIL_FROM_NAME="Western Partners Marine Services"
 
 GOOGLE_ANALYTICS_ID=UA-XXXXXXXXX-X
 RECAPTCHA_SITE_KEY=your_site_key

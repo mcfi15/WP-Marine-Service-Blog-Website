@@ -1,10 +1,10 @@
+/node_modules
 /app
-/bootstrap/cache
-/vendor
-.node_modules
+/public/build
+/public/hot
 /public/storage
-/public/hotmail
 /storage/*.key
+/vendor
 .env
 .env.backup
 .env.production
@@ -21,13 +21,15 @@ yarn-error.log
 .DS_Store
 Thumbs.db
 *.log
-```
+composer.lock
 
 # Laravel Specific
+/bootstrap/cache/*
+!/bootstrap/cache/.gitkeep
 /storage/logs/*
 !/storage/logs/.gitkeep
 /storage/framework/cache/*
-!/storage/forum/cache/.gitkeep
+!/storage/framework/cache/.gitkeep
 /storage/framework/sessions/*
 !/storage/framework/sessions/.gitkeep
 /storage/framework/views/*

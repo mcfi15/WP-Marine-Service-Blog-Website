@@ -1,7 +1,7 @@
 @extends('frontend.layouts.main')
 
-@section('meta_title', $page->meta_title ?? ($settings['seo']['seo_about_title'] ?? 'About Us - WP Marine Limited'))
-@section('meta_description', $page->meta_description ?? ($settings['seo']['seo_about_description'] ?? 'Learn about WP Marine Limited'))
+@section('meta_title', $page->meta_title ?? ($settings['seo']['seo_about_title'] ?? 'About Us - ' . ($settings['general']['site_name'] ?? 'Western Partners Marine Services')))
+@section('meta_description', $page->meta_description ?? ($settings['seo']['seo_about_description'] ?? 'Learn about ' . ($settings['general']['site_name'] ?? 'Western Partners Marine Services')))
 
 @section('content')
 <section class="hero" style="min-height: 50vh;">

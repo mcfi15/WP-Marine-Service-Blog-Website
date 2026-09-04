@@ -1,6 +1,6 @@
 @extends('frontend.layouts.main')
 
-@section('meta_title', $page->meta_title ?? ($settings['seo']['seo_offer_title'] ?? 'Our Services - WP Marine Limited'))
+@section('meta_title', $page->meta_title ?? ($settings['seo']['seo_offer_title'] ?? 'Our Services - ' . ($settings['general']['site_name'] ?? 'Western Partners Marine Services')))
 @section('meta_description', $page->meta_description ?? ($settings['seo']['seo_offer_description'] ?? 'Discover our comprehensive marine services'))
 
 @section('content')

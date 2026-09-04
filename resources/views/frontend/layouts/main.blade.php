@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     
-    <title>@yield('meta_title', ($settings['general']['site_name'] ?? 'WP Marine Limited') . ' - Ship Chandlery & Marine Services')</title>
+    <title>@yield('meta_title', ($settings['general']['site_name'] ?? 'Western Partners Marine Services') . ' - Ship Chandlery & Marine Services')</title>
     <meta name="description" content="@yield('meta_description', 'Professional ship chandlery and marine servicing company operating through a large network of reliable partners across Africa, Middle East, and Asia.')">
     <meta name="keywords" content="@yield('meta_keywords', 'ship chandlery, marine services, bunker delivery, fresh water supply, lubricating oils, port services')">
-    <meta name="author" content="WP Marine Limited">
+    <meta name="author" content="{{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}">
     <meta name="robots" content="index, follow">
     
-    <meta property="og:title" content="@yield('meta_title', 'WP Marine Limited')">
+    <meta property="og:title" content="@yield('meta_title', $settings['general']['site_name'] ?? 'Western Partners Marine Services')">
     <meta property="og:description" content="@yield('meta_description', 'Professional ship chandlery and marine servicing company')">
     <meta property="og:type" content="website">
     <meta property="og:url" content="{{ url()->current() }}">
@@ -412,10 +412,15 @@
     <nav class="navbar navbar-expand-lg fixed-top {{ request()->routeIs('frontend.home') ? '' : 'inner-page' }}" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="{{ route('frontend.home') }}">
-                @if($settings['general']['site_logo'] ?? false)
-                <img src="{{ asset('storage/' . $settings['general']['site_logo']) }}" alt="{{ $settings['general']['site_name'] ?? 'WP Marine' }}" height="40">
+                @if(($settings['general']['site_dark_logo'] ?? false) || ($settings['general']['site_light_logo'] ?? false))
+                @if($settings['general']['site_dark_logo'] ?? false)
+                <img src="{{ asset('storage/' . $settings['general']['site_dark_logo']) }}" alt="{{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}" height="40" class="logo-on-dark" style="{{ request()->routeIs('frontend.home') ? '' : 'display:none;' }}">
+                @endif
+                @if($settings['general']['site_light_logo'] ?? false)
+                <img src="{{ asset('storage/' . $settings['general']['site_light_logo']) }}" alt="{{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}" height="40" class="logo-on-light" style="{{ request()->routeIs('frontend.home') ? 'display:none;' : '' }}">
+                @endif
                 @else
-                <i class="fas fa-ship me-2"></i>{{ $settings['general']['site_name'] ?? 'WP Marine' }}
+                <i class="fas fa-ship me-2"></i>{{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}
                 @endif
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -450,7 +455,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 mb-4">
-                    <h5>{{ $settings['general']['site_name'] ?? 'WP Marine Limited' }}</h5>
+                    <h5>{{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}</h5>
                     <p class="text-white-50">
                         {{ $settings['general']['site_description'] ?? 'Ship chandlery and marine servicing company, operating through a large range of network with reliable partners across Africa, Middle East, and Asia.' }}
                     </p>
@@ -507,7 +512,7 @@
             </div>
             <div class="footer-bottom text-center">
                 <p class="text-white-50 mb-0">
-                    &copy; {{ date('Y') }} Western Partners Marine Services Limited. All Rights Reserved.
+                    &copy; {{ date('Y') }} {{ $settings['general']['site_name'] ?? 'Western Partners Marine Services' }}. All Rights Reserved.
                 </p>
             </div>
         </div>
@@ -564,10 +569,21 @@
         $(window).scroll(function() {
             if ($(this).scrollTop() > 50) {
                 $('.navbar').addClass('scrolled');
+                $('.logo-on-light').show();
+                $('.logo-on-dark').hide();
             } else {
                 $('.navbar').removeClass('scrolled');
+                $('.logo-on-light').hide();
+                $('.logo-on-dark').show();
             }
         });
+        // Inner pages always show the light-background logo
+        if ($('.navbar').hasClass('inner-page')) {
+            $('.logo-on-light').show();
+            $('.logo-on-dark').hide();
+        }
+        // Trigger scroll check on load
+        $(window).trigger('scroll');
         
         // Cookie banner
         function acceptCookies() {

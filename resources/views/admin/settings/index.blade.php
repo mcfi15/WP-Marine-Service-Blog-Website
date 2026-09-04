@@ -71,13 +71,24 @@
                                         <textarea name="site_description" class="form-control" rows="2">{{ $settings['general']['site_description'] ?? '' }}</textarea>
                                     </div>
                                     <div class="mb-3">
-                                        <label class="form-label">Site Logo</label>
-                                        <input type="file" name="site_logo" class="form-control" accept="image/png,image/jpeg,image/svg+xml,image/webp">
-                                        <small class="text-muted">Upload logo (PNG, JPG, SVG, WEBP). Will replace existing logo.</small>
-                                        @if($settings['general']['site_logo'] ?? false)
-                                        <div class="mt-2">
-                                            <img src="{{ asset('storage/' . $settings['general']['site_logo']) }}" height="50" alt="Current logo">
-                                            <label class="ms-2"><input type="checkbox" name="remove_site_logo" value="1"> Remove logo</label>
+                                        <label class="form-label fw-bold">Logo for Dark Backgrounds (e.g. hero, sidebar)</label>
+                                        <small class="text-muted d-block mb-2">Upload the light/white version of your logo. Used on dark or transparent backgrounds.</small>
+                                        <input type="file" name="site_dark_logo" class="form-control" accept="image/png,image/jpeg,image/svg+xml,image/webp">
+                                        @if($settings['general']['site_dark_logo'] ?? false)
+                                        <div class="mt-2 p-3" style="background:#1a1a2e; border-radius:8px; display:inline-block;">
+                                            <img src="{{ asset('storage/' . $settings['general']['site_dark_logo']) }}" height="50" alt="Dark bg logo">
+                                            <label class="ms-2 text-white"><input type="checkbox" name="remove_site_dark_logo" value="1"> Remove</label>
+                                        </div>
+                                        @endif
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label fw-bold">Logo for Light Backgrounds (e.g. scrolled navbar)</label>
+                                        <small class="text-muted d-block mb-2">Upload the dark version of your logo. Used on white/light backgrounds.</small>
+                                        <input type="file" name="site_light_logo" class="form-control" accept="image/png,image/jpeg,image/svg+xml,image/webp">
+                                        @if($settings['general']['site_light_logo'] ?? false)
+                                        <div class="mt-2 p-3" style="background:#f0f0f0; border-radius:8px; display:inline-block;">
+                                            <img src="{{ asset('storage/' . $settings['general']['site_light_logo']) }}" height="50" alt="Light bg logo">
+                                            <label class="ms-2"><input type="checkbox" name="remove_site_light_logo" value="1"> Remove</label>
                                         </div>
                                         @endif
                                     </div>
